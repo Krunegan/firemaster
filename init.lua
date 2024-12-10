@@ -37,7 +37,7 @@ minetest.register_tool("firemaster:tool", {
   inventory_image = "firemaster_tool.png",
   on_use = function(itemstack, user, pointed_thing)
       local player_name = user:get_player_name()
-      local pos = user:getpos()
+      local pos = user:get_pos()
       local dir = user:get_look_dir()
 
       local playername = user:get_player_name()
